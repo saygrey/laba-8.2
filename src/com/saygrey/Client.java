@@ -2,7 +2,7 @@ package com.saygrey;
 
 import java.net.*;
 import java.io.*;
-import java.util.Scanner;
+
 
 public class Client implements Runnable {
     public void run() {
@@ -23,7 +23,7 @@ public class Client implements Runnable {
 
             System.out.println("CLIENT: Type file adress");
             //File file = new File(new Scanner(System.in).nextLine());
-            File file =new File("C:\\Users\\Dima\\Desktop\\test\\50RubaiToSend.txt");
+            File file = new File("C:\\Users\\Dima\\Desktop\\test\\50RubaiToSend.txt");
 
             FileInputStream fin = new FileInputStream(file);
             fin.read(bytes);
