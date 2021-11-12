@@ -41,7 +41,7 @@ public class Server implements Runnable{
             rubais.add(rubai);
 
             System.out.println("SERVER: File received");
-            System.out.println("SERVER: Sending string from him");
+            System.out.println("SERVER: Sending rubai from him");
             int x= (int)(Math.random()*50);
             out.writeUTF(rubais.get(x));
             in.close();
